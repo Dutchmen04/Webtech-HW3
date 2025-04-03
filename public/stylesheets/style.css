@@ -1,0 +1,631 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'nyt-karnak', serif;
+    color: #e22911e8;
+}
+
+h2{
+    font-size: 2.3em;
+    font-family: 'nyt-karnak', serif;
+    color: rgb(212, 68, 48);
+}
+
+h3{
+    font-size: 1em;
+    font-family: 'nyt-karnak', serif;
+    color: rgb(151, 51, 38);
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 1em;
+    font-family: 'nyt-karnak', serif;
+    color: initial;
+}
+
+header{
+    display: flex;
+    margin: 4em 20vw;
+    align-content: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 1cm;
+    border-color: grey;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);
+    background-image: url("../pictures/cooking-cat.jpg");  
+    background-size: 20%;
+}
+
+.banner{
+    backdrop-filter: blur(1.5px);
+}
+
+.introduction__catch-phrase{
+    padding-bottom: 3em;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.introduction__text{
+    padding-bottom: 4em;
+    padding-right: 1em;
+    text-align: justify;
+}
+
+body{
+    background-color: #f1ead7c5;
+    
+}
+
+main{
+    margin: 1em 6em;
+    padding: 1em 6em;
+    background-color: #f4f4f4;
+    text-align: justify;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);
+}
+
+.link-table__caption{
+    color: #df321b;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.link-table__body{
+    background-color: cornflowerblue;
+}
+
+.link-table, th, td{
+    border: 0.1em solid;
+    border-collapse: collapse;
+    padding: 1em;
+    text-align: center;
+}
+
+.link-table{
+    padding-bottom: 3em;
+}
+
+
+.article-container{
+    display: flex;
+}
+
+.news__art1__img{
+    margin-left: 2.5em;
+    display: flex;
+    width: 200%;
+    display: inline-block;
+}
+
+.news__art1__img img{
+    width: 100%;
+    object-fit: contain;
+      
+}
+
+.news__art2__img{
+    margin-left: 2.5em;
+    display: flex;
+    width: 100%;
+    display: inline-block;
+}
+
+.news__art2__img img{
+    width: 100%;
+    object-fit: contain;
+      
+}
+
+
+
+.news__art1__suggestions{
+    padding-top: 1em;
+}
+
+.news__art1__suggestions dt{
+    font-weight: bold;
+}
+
+.news__art1__suggestions dd{
+    padding-bottom: 0.8em;
+}
+
+
+
+nav {
+    background: #ffffffdb;
+    padding: 0.8em 1;
+    display: flex;
+    position: sticky;
+    top: 20px;
+    align-content: space-between;
+    justify-content: center;
+    list-style: none;
+    margin: 0 1em;
+    border: black solid 1px;
+    border-radius: 1em;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: initial;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:#0077cc;
+}
+
+.recipe h2, .ingredients, .instructions {
+    text-align: left;;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.0em;
+    width: 100%;
+}
+
+.recipe-img {
+    width: 130%;
+    border-radius: 0.7em;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2em;
+}
+
+.ingredients {
+    width: 100%;
+    list-style:inside;
+    padding: 0;
+}
+
+.ingredients li {
+    padding: 0.15em 0;
+}
+
+.instructions {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    list-style-type: decimal; 
+}
+
+.instructions li {
+    padding: 0.5rem 0;
+}
+
+#nutrition {
+    width: 70%;
+    font-size: 0.75em;
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+#nutrition th, #nutrition td {
+    padding: 0.6rem;
+    text-align: left;
+}
+
+#nutrition th {
+    font-weight: bold;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin: 1.6rem 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color:#0669a1
+}
+
+.nutrition tr{
+    background-color: grey;
+}
+
+.personal {
+    font-family: Arial, sans-serif;
+    color: darkgreen;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal p {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.personal h2 {
+    font-size: 1.5em;
+    color: rgb(197, 3, 3);
+    border-bottom: 2px solid darkgreen;
+    padding-bottom: 5px;
+}
+
+footer {
+    background: linear-gradient(to top, #cecece86, #ffffff5d);
+    padding: 0.5em;
+    text-align: center;
+    border-top: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+footer label {
+    font-weight: bold;
+    margin-right: 0.6em;
+    font-size: 0.6em;
+}
+
+footer p {
+    margin-top: 1em;
+    font-size: 0.6em;
+    color: #333;
+}
+
+footer a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#darkModeToggle {
+    top: 1em;
+    right: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#recipe-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 2em;
+}
+
+.change-style-menu {
+    padding: 0.2em 0em 0.2em;
+    width: 70%;
+    margin: auto;
+}
+
+.change-style-menu h2, #add-recipe h2{
+    margin-top: 0; /* Remove or reduce top margin */
+    margin-bottom: 0.2em; /* Adjust bottom margin */
+}
+
+.recipe-input {
+    background-color: #f4f4f4;
+    box-shadow: #494949 0.1em 0.1em 0.1em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 15%;
+    padding: 0.25em;
+    margin: 0.35em;
+    border-radius: 0.1em;
+    border: 1px solid #9e1010;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input#recipe-image{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 15%;
+}
+
+#file-input {
+    display: flex; 
+    margin: 0.5em auto; 
+    padding: 0.5em 0.5em; 
+    font-size: 1em; 
+    border: 1.5px solid rgb(0, 0, 0); 
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#file-input input {
+    margin-left: 1em;
+    width: 30%;
+    cursor: pointer; 
+}
+
+#recipe-ingredients {
+    width: 20%;
+}
+
+#submit-recipe {
+    background-color: #b32d1b;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 0.1em;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+#member-photo{
+    width: 30%;
+}
+
+#courses-table{
+    border-collapse: collapse;
+    width: 60%;
+    color:black;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+#courses-table th, 
+#courses-table td {
+    border: 1.5px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+#courses-table th {
+    background-color: #444; 
+    color: white; 
+}
+
+#empty-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.course-title .course-tooltip{
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+
+}
+.course-title:hover .course-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    gap: 1.25em; /* Increase gap for better spacing */
+    margin: 0 auto;
+    width: 40%;
+    padding: 1em; /* Increase padding for better spacing */
+    border-radius: 15px; /* Slightly larger border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#login-container input {
+    width: 80%;
+    padding: 0.5em; /* Slightly larger padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Softer border color */
+    font-size: 0.75em;
+    margin: 0 auto; /* Center the input fields */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+#login-container input:focus {
+    border-color: #b32d1b; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+#login-container a {
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    width: 40%;
+}
+
+.button-style {
+    background-color: #b32d1b;
+    width: 65%;
+    color: white;
+    font-weight: bold;
+    padding: 0.75em 1.5em; /* Slightly larger padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer;
+    font-size: 0.75em;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.button-style:hover {
+    background-color: #9e1010; /* Darker shade on hover */
+}
+
+.button-style a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+}
+
+#login-container label {
+    font-weight: bold;
+}
+
+#login-container select {
+    width: 85%;
+    padding: 0.5em; /* Slightly larger padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Softer border color */
+    font-size: 0.75em;
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+    text-align: center;
+}
+
+#profile-button{
+    all: unset;
+    cursor: pointer;
+}
+
+#profile-button img{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 0 0.2em 0.3em 0 rgba(0, 0, 0, 0.2), 0 0.4em 2em 0 rgba(0, 0, 0, 0.19);              
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu styles (optional) */
+.menu a {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Modal styles */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 70%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Hide all modal sections by default */
+  .modal-section {
+    display: none;
+  }
+  
+  /* Show active modal section */
+  .modal-section.active {
+    display: block;
+  }
+  
+  #modal-profile form {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 1em;
+    justify-items: start;
+    margin-bottom: 1em;
+
+    
+  }
+
+@media screen and (max-width: 1200px) {
+
+    main{
+        margin: 2.5em 5em;
+        padding: 2.5em 5em;
+
+    }
+
+    .banner{
+        background-size: 25%;
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1.15em;
+
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+    
+    h4{
+        font-size: 1em;
+    }
+
+    html {
+        font-size: 0.6em;
+    }
+  }
